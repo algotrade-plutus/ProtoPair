@@ -5,7 +5,7 @@
  "sessions": 127,
  "plutus_simulator_commit": "b62e16331e73344de1cfab9734c30cb24f2fdf58",
  "plutus_simulator_dirty": false,
- "proto_pair_commit": "unknown",
+ "proto_pair_commit": "0c8b77b38933f733d660b33d353a25cbf11df291",
  "parameters": {
   "capital": 600000000,
   "deposit_target": {
