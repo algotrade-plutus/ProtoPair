@@ -1,0 +1,482 @@
+{
+ "window": "w2",
+ "start": "2023-08-07",
+ "end": "2024-02-02",
+ "sessions": 127,
+ "plutus_simulator_commit": "b62e16331e73344de1cfab9734c30cb24f2fdf58",
+ "plutus_simulator_dirty": false,
+ "proto_pair_commit": "unknown",
+ "parameters": {
+  "capital": 600000000,
+  "deposit_target": {
+   "comfortable": 80000000,
+   "thin": 62000000
+  },
+  "lookback": 60,
+  "z_in": 1.5,
+  "z_out": 0.5,
+  "lots_per_name": 1,
+  "hedge_beta": 1.0,
+  "naive_cost": {
+   "equity_rate_per_side": 0.0015,
+   "equity_sell_tax": 0.001,
+   "futures_per_contract_per_side": 10000
+  }
+ },
+ "plans": [
+  {
+   "side": "RICH",
+   "entry": "2023-08-22",
+   "exit": "2023-08-23",
+   "contract": "VN30F2309",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-09-06",
+   "exit": "2023-09-13",
+   "contract": "VN30F2309",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-09-29",
+   "exit": "2023-10-02",
+   "contract": "VN30F2310",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-10-04",
+   "exit": "2023-10-06",
+   "contract": "VN30F2310",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-10-09",
+   "exit": "2023-10-11",
+   "contract": "VN30F2310",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-10-13",
+   "exit": "2023-10-18",
+   "contract": "VN30F2310",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-10-20",
+   "exit": "2023-10-23",
+   "contract": "VN30F2311",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-10-30",
+   "exit": "2023-10-31",
+   "contract": "VN30F2311",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-11-08",
+   "exit": "2023-11-10",
+   "contract": "VN30F2311",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-12-26",
+   "exit": "2024-01-04",
+   "contract": "VN30F2401",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2024-01-05",
+   "exit": "2024-01-08",
+   "contract": "VN30F2401",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2024-01-19",
+   "exit": "2024-01-23",
+   "contract": "VN30F2402",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2024-02-02",
+   "exit": null,
+   "contract": "VN30F2402",
+   "contracts": 1,
+   "names": 30
+  }
+ ],
+ "naive": {
+  "fills": 775,
+  "fills_by_leg": {
+   "equity": 750,
+   "futures": 25
+  },
+  "positions": {
+   "executable_rich": 7,
+   "mirror_cheap": 6,
+   "round_trips": 12,
+   "open_at_end": 1
+  },
+  "assumed_costs": 6575210.0,
+  "hpr_pct": 0.2766,
+  "sharpe": 0.9009,
+  "mdd_pct": -0.4013,
+  "final_equity": 601659790.0,
+  "sessions": 127
+ },
+ "faithful": {
+  "fills": 403,
+  "fills_by_venue": {
+   "HSX": 390,
+   "HNXDS": 13
+  },
+  "provenance": {
+   "settlement_calendar_id": "derived-hose-sessions-w2",
+   "settlement_calendar_source": "derived: weekdays with no HOSE VN30 session in the frozen slice (exchange closures), not a VSDC notice"
+  },
+  "hpr_pct": -0.312,
+  "sharpe": -0.827,
+  "mdd_pct": -0.7709,
+  "final_equity": 598128137.0
+ },
+ "tier1": {
+  "settlement_asymmetry": {
+   "executable_entries_signalled": 7,
+   "executable_entries_opened": 7,
+   "exits_wanted": 6,
+   "exits_blocked_by_t2": 4,
+   "name_days_held_open": 180,
+   "hedge_leg_unfilled_session_retries": 1,
+   "exit_records": [
+    {
+     "plan_entry": "2023-08-22",
+     "exit_wanted": "2023-08-23",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2023-09-06",
+     "exit_wanted": "2023-09-13",
+     "names_blocked_on_exit_day": 0
+    },
+    {
+     "plan_entry": "2023-11-08",
+     "exit_wanted": "2023-11-10",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2023-12-26",
+     "exit_wanted": "2024-01-04",
+     "names_blocked_on_exit_day": 0
+    },
+    {
+     "plan_entry": "2024-01-05",
+     "exit_wanted": "2024-01-08",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2024-01-19",
+     "exit_wanted": "2024-01-23",
+     "names_blocked_on_exit_day": 30
+    }
+   ]
+  },
+  "opposite_side": {
+   "mirror_trades_signalled": 6,
+   "attempted": 6,
+   "forgone": 6,
+   "opened": 0,
+   "equity_legs_refused": 180
+  },
+  "funding": {
+   "transfers_in": 7,
+   "transferred_in_dong": "560000000.0",
+   "sweeps_back": 6,
+   "swept_back_dong": "482687128.0",
+   "funded_in_aggregate_true": 7,
+   "placed_without_transfer": 1
+  },
+  "margin": {
+   "margin_warning": 0,
+   "margin_call": 0,
+   "margin_call_cleared": 0,
+   "forced_liquidation": 0
+  },
+  "expiry_settlements": [],
+  "dated_im_at_entry": [
+   {
+    "day": "2023-08-22",
+    "contract": "VN30F2309",
+    "contracts": 1,
+    "initial_margin_dong": "20332000.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2023-09-06",
+    "contract": "VN30F2309",
+    "contracts": 1,
+    "initial_margin_dong": "21471000.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2023-11-08",
+    "contract": "VN30F2311",
+    "contracts": 1,
+    "initial_margin_dong": "19278000.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2024-01-05",
+    "contract": "VN30F2401",
+    "contracts": 1,
+    "initial_margin_dong": "19822000.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2024-01-19",
+    "contract": "VN30F2402",
+    "contracts": 1,
+    "initial_margin_dong": "20230000.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2024-02-02",
+    "contract": "VN30F2402",
+    "contracts": 1,
+    "initial_margin_dong": "20078700.000",
+    "im_rate": "0.1700"
+   }
+  ],
+  "refusals_by_cause": {
+   "HNXDS": {
+    "insufficient_deposit": 7
+   },
+   "HSX": {
+    "unsettled_holding": 180
+   }
+  },
+  "submit_indeterminate": {},
+  "fill_time_indeterminate_events": 0,
+  "charges_by_venue_dong": {
+   "HNXDS": "263161",
+   "HSX": "3788702"
+  },
+  "indeterminate_report": "RunIgnorance(evaluations=554, indeterminate=0, by_field={}, by_rule={}, silent_ignorance={'fill.decided_without.book_size': 403}, exercised={'rule.legal_order_types': 591, 'rule.max_order_size': 591, 'rule.tick_size': 591, 'rule.admits': 591, 'funding.securities_cash': 570, 'funding.derivatives_deposit': 21, 'fill_policy': 404, 'rule.margin_model': 34, 'margin.derivatives.mark': 34, 'margin.derivatives.ladder': 34, 'margin.derivatives.overnight': 116}, unexercised=())"
+ },
+ "gap": {
+  "fills_f_over_n": 0.52,
+  "hpr_naive_pct": 0.2766,
+  "hpr_faithful_pct": -0.312
+ },
+ "variants": {
+  "headline": {
+   "fills": 403,
+   "hpr_pct": -0.312,
+   "sharpe": -0.827,
+   "mdd_pct": -0.7709,
+   "exits_blocked_by_t2": 4,
+   "exits_wanted": 6,
+   "name_days_held_open": 180,
+   "opposite_side_forgone": 6,
+   "opposite_side_signalled": 6,
+   "margin": {
+    "margin_warning": 0,
+    "margin_call": 0,
+    "margin_call_cleared": 0,
+    "forced_liquidation": 0
+   },
+   "funding": {
+    "transfers_in": 7,
+    "transferred_in_dong": "560000000.0",
+    "sweeps_back": 6,
+    "swept_back_dong": "482687128.0",
+    "funded_in_aggregate_true": 7,
+    "placed_without_transfer": 1
+   },
+   "fill_time_indeterminate_events": 0,
+   "submit_indeterminate": {},
+   "refusals_by_cause": {
+    "HNXDS": {
+     "insufficient_deposit": 7
+    },
+    "HSX": {
+     "unsettled_holding": 180
+    }
+   }
+  },
+  "thin": {
+   "fills": 403,
+   "hpr_pct": -0.312,
+   "sharpe": -0.827,
+   "mdd_pct": -0.7709,
+   "exits_blocked_by_t2": 4,
+   "exits_wanted": 6,
+   "name_days_held_open": 180,
+   "opposite_side_forgone": 6,
+   "opposite_side_signalled": 6,
+   "margin": {
+    "margin_warning": 0,
+    "margin_call": 0,
+    "margin_call_cleared": 0,
+    "forced_liquidation": 0
+   },
+   "funding": {
+    "transfers_in": 7,
+    "transferred_in_dong": "434000000.0",
+    "sweeps_back": 6,
+    "swept_back_dong": "374687128.0",
+    "funded_in_aggregate_true": 7,
+    "placed_without_transfer": 1
+   },
+   "fill_time_indeterminate_events": 0,
+   "submit_indeterminate": {},
+   "refusals_by_cause": {
+    "HNXDS": {
+     "insufficient_deposit": 7
+    },
+    "HSX": {
+     "unsettled_holding": 180
+    }
+   }
+  },
+  "hard": {
+   "fills": 377,
+   "hpr_pct": -0.6025,
+   "sharpe": -1.6708,
+   "mdd_pct": -0.9683,
+   "exits_blocked_by_t2": 4,
+   "exits_wanted": 6,
+   "name_days_held_open": 176,
+   "opposite_side_forgone": 6,
+   "opposite_side_signalled": 6,
+   "margin": {
+    "margin_warning": 0,
+    "margin_call": 0,
+    "margin_call_cleared": 0,
+    "forced_liquidation": 0
+   },
+   "funding": {
+    "transfers_in": 7,
+    "transferred_in_dong": "560000000.0",
+    "sweeps_back": 6,
+    "swept_back_dong": "481947449.0",
+    "funded_in_aggregate_true": 7,
+    "placed_without_transfer": 3
+   },
+   "fill_time_indeterminate_events": 27,
+   "submit_indeterminate": {},
+   "refusals_by_cause": {
+    "HNXDS": {
+     "insufficient_deposit": 7
+    },
+    "HSX": {
+     "unsettled_holding": 180
+    }
+   }
+  },
+  "sale_advance": {
+   "fills": 403,
+   "hpr_pct": -0.3777,
+   "sharpe": -1.0038,
+   "mdd_pct": -0.808,
+   "exits_blocked_by_t2": 4,
+   "exits_wanted": 6,
+   "name_days_held_open": 180,
+   "opposite_side_forgone": 6,
+   "opposite_side_signalled": 6,
+   "margin": {
+    "margin_warning": 0,
+    "margin_call": 0,
+    "margin_call_cleared": 0,
+    "forced_liquidation": 0
+   },
+   "funding": {
+    "transfers_in": 7,
+    "transferred_in_dong": "560000000.0",
+    "sweeps_back": 6,
+    "swept_back_dong": "482687128.0",
+    "funded_in_aggregate_true": 7,
+    "placed_without_transfer": 1
+   },
+   "fill_time_indeterminate_events": 0,
+   "submit_indeterminate": {},
+   "refusals_by_cause": {
+    "HNXDS": {
+     "insufficient_deposit": 7
+    },
+    "HSX": {
+     "unsettled_holding": 180
+    }
+   }
+  }
+ },
+ "slice": {
+  "quote_ceil.parquet": {
+   "bytes": 10641,
+   "sha256": "8c6873c1f5a649e62700c2239d0621bb35e76717095c46ff5798ce2db457b589"
+  },
+  "quote_close.parquet": {
+   "bytes": 11330,
+   "sha256": "203d71391af6d60fc38aecfc79cc465aa65c479bd3b7f4a9f56bc31f22f4bee2"
+  },
+  "quote_dailyvolume.parquet": {
+   "bytes": 21025,
+   "sha256": "40748aa05c4d76033efeecf9e5767ef0434cd807b732cf17171633466d7db1b7"
+  },
+  "quote_floor.parquet": {
+   "bytes": 10584,
+   "sha256": "dd72d5929b9a735f494afc10e8c2cac6106e4c9f8a4b2175ec3dd136e995548f"
+  },
+  "quote_futurecontractcode.parquet": {
+   "bytes": 1257,
+   "sha256": "b5905581331ffe84f6e6ae1f70bf7178d100ebff2c1d9c209fe810b8d8bb2796"
+  },
+  "quote_max.parquet": {
+   "bytes": 10797,
+   "sha256": "ae6ae026cf40ad4f17c8e8bdd57ea3349bb72d9f9400c7f6709df14156dd4a07"
+  },
+  "quote_min.parquet": {
+   "bytes": 10757,
+   "sha256": "897dcbeb7e0d23292c45f2947cab122441a32e041f84b3f61541bfd6104a1150"
+  },
+  "quote_open.parquet": {
+   "bytes": 10817,
+   "sha256": "28d8208ed15d465042c4891849ed4bfd6ae2865ba880f1a978e7f0b4d327826c"
+  },
+  "quote_reference.parquet": {
+   "bytes": 10752,
+   "sha256": "916bcbba2561e52d836e799fdc127c7e54676ecd4e043cfe6bd32697209b2d2c"
+  },
+  "quote_ticker.parquet": {
+   "bytes": 2184,
+   "sha256": "227bce2b4227e56e659606c8fe232ec6f0e063541e843f2ca711b6d6aeef972e"
+  },
+  "quote_vn30.parquet": {
+   "bytes": 707,
+   "sha256": "394849fa1f0a635fff98437d6b275bbc98213c71acc6eff946112ba28d50858a"
+  }
+ }
+}

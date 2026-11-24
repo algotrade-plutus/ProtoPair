@@ -1,0 +1,19 @@
+__pycache__/
+.DS_Store
+.venv/
+venv/
+.plutus-venv/
+.pytest_cache/
+# credentials / env: never committed
+.env
+.env*
+*.env
+cred/
+*credential*
+*.pgpass
+*.cred.json
+# plutus-verify ephemera
+.plutus/run/
+.plutus/results/
+.plutus/cache/
+.plutus/build/

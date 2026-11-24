@@ -1,0 +1,589 @@
+{
+ "window": "w1",
+ "start": "2022-08-01",
+ "end": "2023-08-04",
+ "sessions": 254,
+ "plutus_simulator_commit": "b62e16331e73344de1cfab9734c30cb24f2fdf58",
+ "plutus_simulator_dirty": false,
+ "proto_pair_commit": "unknown",
+ "parameters": {
+  "capital": 600000000,
+  "deposit_target": {
+   "comfortable": 80000000,
+   "thin": 62000000
+  },
+  "lookback": 60,
+  "z_in": 1.5,
+  "z_out": 0.5,
+  "lots_per_name": 1,
+  "hedge_beta": 1.0,
+  "naive_cost": {
+   "equity_rate_per_side": 0.0015,
+   "equity_sell_tax": 0.001,
+   "futures_per_contract_per_side": 10000
+  }
+ },
+ "plans": [
+  {
+   "side": "CHEAP",
+   "entry": "2022-08-02",
+   "exit": "2022-08-05",
+   "contract": "VN30F2208",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2022-08-17",
+   "exit": "2022-08-18",
+   "contract": "VN30F2208",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2022-09-16",
+   "exit": "2022-09-19",
+   "contract": "VN30F2210",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2022-09-26",
+   "exit": "2022-10-05",
+   "contract": "VN30F2210",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2022-10-21",
+   "exit": "2022-10-27",
+   "contract": "VN30F2211",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2022-11-01",
+   "exit": "2022-11-02",
+   "contract": "VN30F2211",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2022-11-03",
+   "exit": "2022-11-08",
+   "contract": "VN30F2211",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2022-11-10",
+   "exit": "2022-11-11",
+   "contract": "VN30F2211",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2022-11-16",
+   "exit": "2022-11-17",
+   "contract": "VN30F2211",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2022-12-02",
+   "exit": "2022-12-05",
+   "contract": "VN30F2212",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-03-10",
+   "exit": "2023-03-13",
+   "contract": "VN30F2303",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-03-22",
+   "exit": "2023-03-30",
+   "contract": "VN30F2304",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-04-28",
+   "exit": "2023-05-04",
+   "contract": "VN30F2305",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-05-17",
+   "exit": "2023-05-18",
+   "contract": "VN30F2305",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-06-13",
+   "exit": "2023-06-15",
+   "contract": "VN30F2306",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-06-21",
+   "exit": "2023-06-22",
+   "contract": "VN30F2307",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "CHEAP",
+   "entry": "2023-06-27",
+   "exit": "2023-06-30",
+   "contract": "VN30F2307",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-07-14",
+   "exit": "2023-07-20",
+   "contract": "VN30F2307",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-07-31",
+   "exit": "2023-08-02",
+   "contract": "VN30F2308",
+   "contracts": 1,
+   "names": 30
+  },
+  {
+   "side": "RICH",
+   "entry": "2023-08-04",
+   "exit": null,
+   "contract": "VN30F2308",
+   "contracts": 1,
+   "names": 30
+  }
+ ],
+ "naive": {
+  "fills": 1209,
+  "fills_by_leg": {
+   "equity": 1170,
+   "futures": 39
+  },
+  "positions": {
+   "executable_rich": 11,
+   "mirror_cheap": 9,
+   "round_trips": 19,
+   "open_at_end": 1
+  },
+  "assumed_costs": 11443112.0,
+  "hpr_pct": 1.0278,
+  "sharpe": 1.1321,
+  "mdd_pct": -0.4844,
+  "final_equity": 606166888.0,
+  "sessions": 254
+ },
+ "faithful": {
+  "fills": 651,
+  "fills_by_venue": {
+   "HSX": 630,
+   "HNXDS": 21
+  },
+  "provenance": {
+   "settlement_calendar_id": "derived-hose-sessions-w1",
+   "settlement_calendar_source": "derived: weekdays with no HOSE VN30 session in the frozen slice (exchange closures), not a VSDC notice"
+  },
+  "hpr_pct": -2.148,
+  "sharpe": -1.6175,
+  "mdd_pct": -2.2542,
+  "final_equity": 587112047.0
+ },
+ "tier1": {
+  "settlement_asymmetry": {
+   "executable_entries_signalled": 11,
+   "executable_entries_opened": 11,
+   "exits_wanted": 10,
+   "exits_blocked_by_t2": 8,
+   "name_days_held_open": 420,
+   "hedge_leg_unfilled_session_retries": 0,
+   "exit_records": [
+    {
+     "plan_entry": "2022-08-17",
+     "exit_wanted": "2022-08-18",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2022-09-26",
+     "exit_wanted": "2022-10-05",
+     "names_blocked_on_exit_day": 0
+    },
+    {
+     "plan_entry": "2022-11-16",
+     "exit_wanted": "2022-11-17",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2022-12-02",
+     "exit_wanted": "2022-12-05",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2023-03-10",
+     "exit_wanted": "2023-03-13",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2023-05-17",
+     "exit_wanted": "2023-05-18",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2023-06-13",
+     "exit_wanted": "2023-06-15",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2023-06-21",
+     "exit_wanted": "2023-06-22",
+     "names_blocked_on_exit_day": 30
+    },
+    {
+     "plan_entry": "2023-07-14",
+     "exit_wanted": "2023-07-20",
+     "names_blocked_on_exit_day": 0
+    },
+    {
+     "plan_entry": "2023-07-31",
+     "exit_wanted": "2023-08-02",
+     "names_blocked_on_exit_day": 30
+    }
+   ]
+  },
+  "opposite_side": {
+   "mirror_trades_signalled": 9,
+   "attempted": 9,
+   "forgone": 9,
+   "opened": 0,
+   "equity_legs_refused": 270
+  },
+  "funding": {
+   "transfers_in": 11,
+   "transferred_in_dong": "880000000.0",
+   "sweeps_back": 10,
+   "swept_back_dong": "807281633.0",
+   "funded_in_aggregate_true": 11
+  },
+  "margin": {
+   "margin_warning": 0,
+   "margin_call": 0,
+   "margin_call_cleared": 0,
+   "forced_liquidation": 0
+  },
+  "expiry_settlements": [],
+  "dated_im_at_entry": [
+   {
+    "day": "2022-08-17",
+    "contract": "VN30F2208",
+    "contracts": 1,
+    "initial_margin_dong": "17017000.000",
+    "im_rate": "0.1300"
+   },
+   {
+    "day": "2022-09-26",
+    "contract": "VN30F2210",
+    "contracts": 1,
+    "initial_margin_dong": "15496000.000",
+    "im_rate": "0.1300"
+   },
+   {
+    "day": "2022-11-16",
+    "contract": "VN30F2211",
+    "contracts": 1,
+    "initial_margin_dong": "12448800.000",
+    "im_rate": "0.1300"
+   },
+   {
+    "day": "2022-12-02",
+    "contract": "VN30F2212",
+    "contracts": 1,
+    "initial_margin_dong": "14313000.000",
+    "im_rate": "0.1300"
+   },
+   {
+    "day": "2023-03-10",
+    "contract": "VN30F2303",
+    "contracts": 1,
+    "initial_margin_dong": "17846600.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2023-05-17",
+    "contract": "VN30F2305",
+    "contracts": 1,
+    "initial_margin_dong": "18105000.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2023-06-13",
+    "contract": "VN30F2306",
+    "contracts": 1,
+    "initial_margin_dong": "18963500.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2023-06-21",
+    "contract": "VN30F2307",
+    "contracts": 1,
+    "initial_margin_dong": "18963500.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2023-07-14",
+    "contract": "VN30F2307",
+    "contracts": 1,
+    "initial_margin_dong": "19755700.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2023-07-31",
+    "contract": "VN30F2308",
+    "contracts": 1,
+    "initial_margin_dong": "20981400.000",
+    "im_rate": "0.1700"
+   },
+   {
+    "day": "2023-08-04",
+    "contract": "VN30F2308",
+    "contracts": 1,
+    "initial_margin_dong": "20988200.000",
+    "im_rate": "0.1700"
+   }
+  ],
+  "refusals_by_cause": {
+   "HSX": {
+    "unsettled_holding": 270
+   },
+   "HNXDS": {
+    "insufficient_deposit": 11
+   }
+  },
+  "submit_indeterminate": {},
+  "fill_time_indeterminate_events": 0,
+  "charges_by_venue_dong": {
+   "HNXDS": "399111",
+   "HSX": "6733842"
+  },
+  "indeterminate_report": "RunIgnorance(evaluations=936, indeterminate=0, by_field={}, by_rule={}, silent_ignorance={'fill.decided_without.book_size': 651}, exercised={'rule.legal_order_types': 932, 'rule.max_order_size': 932, 'rule.tick_size': 932, 'rule.admits': 932, 'funding.securities_cash': 900, 'funding.derivatives_deposit': 32, 'fill_policy': 651, 'rule.margin_model': 43, 'margin.derivatives.mark': 43, 'margin.derivatives.ladder': 43, 'margin.derivatives.overnight': 242}, unexercised=())"
+ },
+ "gap": {
+  "fills_f_over_n": 0.5385,
+  "hpr_naive_pct": 1.0278,
+  "hpr_faithful_pct": -2.148
+ },
+ "variants": {
+  "headline": {
+   "fills": 651,
+   "hpr_pct": -2.148,
+   "sharpe": -1.6175,
+   "mdd_pct": -2.2542,
+   "exits_blocked_by_t2": 8,
+   "exits_wanted": 10,
+   "name_days_held_open": 420,
+   "opposite_side_forgone": 9,
+   "opposite_side_signalled": 9,
+   "margin": {
+    "margin_warning": 0,
+    "margin_call": 0,
+    "margin_call_cleared": 0,
+    "forced_liquidation": 0
+   },
+   "funding": {
+    "transfers_in": 11,
+    "transferred_in_dong": "880000000.0",
+    "sweeps_back": 10,
+    "swept_back_dong": "807281633.0",
+    "funded_in_aggregate_true": 11
+   },
+   "fill_time_indeterminate_events": 0,
+   "submit_indeterminate": {},
+   "refusals_by_cause": {
+    "HSX": {
+     "unsettled_holding": 270
+    },
+    "HNXDS": {
+     "insufficient_deposit": 11
+    }
+   }
+  },
+  "thin": {
+   "fills": 651,
+   "hpr_pct": -2.148,
+   "sharpe": -1.6175,
+   "mdd_pct": -2.2542,
+   "exits_blocked_by_t2": 8,
+   "exits_wanted": 10,
+   "name_days_held_open": 420,
+   "opposite_side_forgone": 9,
+   "opposite_side_signalled": 9,
+   "margin": {
+    "margin_warning": 0,
+    "margin_call": 0,
+    "margin_call_cleared": 0,
+    "forced_liquidation": 0
+   },
+   "funding": {
+    "transfers_in": 11,
+    "transferred_in_dong": "682000000.0",
+    "sweeps_back": 10,
+    "swept_back_dong": "627281633.0",
+    "funded_in_aggregate_true": 11
+   },
+   "fill_time_indeterminate_events": 0,
+   "submit_indeterminate": {},
+   "refusals_by_cause": {
+    "HSX": {
+     "unsettled_holding": 270
+    },
+    "HNXDS": {
+     "insufficient_deposit": 11
+    }
+   }
+  },
+  "hard": {
+   "fills": 583,
+   "hpr_pct": -1.8715,
+   "sharpe": -1.3404,
+   "mdd_pct": -2.0114,
+   "exits_blocked_by_t2": 8,
+   "exits_wanted": 10,
+   "name_days_held_open": 371,
+   "opposite_side_forgone": 9,
+   "opposite_side_signalled": 9,
+   "margin": {
+    "margin_warning": 0,
+    "margin_call": 0,
+    "margin_call_cleared": 0,
+    "forced_liquidation": 0
+   },
+   "funding": {
+    "transfers_in": 11,
+    "transferred_in_dong": "880000000.0",
+    "sweeps_back": 10,
+    "swept_back_dong": "808397499.0",
+    "funded_in_aggregate_true": 11,
+    "placed_without_transfer": 2
+   },
+   "fill_time_indeterminate_events": 71,
+   "submit_indeterminate": {},
+   "refusals_by_cause": {
+    "HSX": {
+     "unsettled_holding": 270
+    },
+    "HNXDS": {
+     "insufficient_deposit": 11
+    }
+   }
+  },
+  "sale_advance": {
+   "fills": 651,
+   "hpr_pct": -2.2551,
+   "sharpe": -1.6989,
+   "mdd_pct": -2.3612,
+   "exits_blocked_by_t2": 8,
+   "exits_wanted": 10,
+   "name_days_held_open": 420,
+   "opposite_side_forgone": 9,
+   "opposite_side_signalled": 9,
+   "margin": {
+    "margin_warning": 0,
+    "margin_call": 0,
+    "margin_call_cleared": 0,
+    "forced_liquidation": 0
+   },
+   "funding": {
+    "transfers_in": 11,
+    "transferred_in_dong": "880000000.0",
+    "sweeps_back": 10,
+    "swept_back_dong": "807281633.0",
+    "funded_in_aggregate_true": 11
+   },
+   "fill_time_indeterminate_events": 0,
+   "submit_indeterminate": {},
+   "refusals_by_cause": {
+    "HSX": {
+     "unsettled_holding": 270
+    },
+    "HNXDS": {
+     "insufficient_deposit": 11
+    }
+   }
+  }
+ },
+ "slice": {
+  "quote_ceil.parquet": {
+   "bytes": 17405,
+   "sha256": "453dc3ba5f56cee98d33b2265185b4a42275728b383ae5a85bed452b30b6f131"
+  },
+  "quote_close.parquet": {
+   "bytes": 21135,
+   "sha256": "9d1f11e832e2714b144701042dc4fff1445e33433ca673e9c0dccf089fa0da76"
+  },
+  "quote_dailyvolume.parquet": {
+   "bytes": 40072,
+   "sha256": "5e9804c37848cb99e9a1f608854b1dddc93997ce6742493eea7dc3b649c539d7"
+  },
+  "quote_floor.parquet": {
+   "bytes": 17397,
+   "sha256": "e3ac9e03a5704b1de9c36cbe0fde8e4dfcfc83a4dfcef595aa25e21515b4f4a0"
+  },
+  "quote_futurecontractcode.parquet": {
+   "bytes": 1625,
+   "sha256": "2126958f5c51924ac9a8934a48a09024206d37da7acb69143decf48c9cc98ead"
+  },
+  "quote_max.parquet": {
+   "bytes": 17481,
+   "sha256": "cfb0cc19cff8805a95c3c41b2f8450010ceeee5817e6074c451ce0799b0d4236"
+  },
+  "quote_min.parquet": {
+   "bytes": 17530,
+   "sha256": "52b36745d772a961625ecc79a7ccb4bedd43f7b726ed1e9b2ff8a1244cf6086f"
+  },
+  "quote_open.parquet": {
+   "bytes": 17467,
+   "sha256": "169e82af9b97898a2dae83353abdb1156a8b31d1bb5fc072c73200b335afafaa"
+  },
+  "quote_reference.parquet": {
+   "bytes": 17464,
+   "sha256": "2eabd11ffcca31b1fb6555fc1ea8a80fe7f256a842e5976f87fb9a3d078a4dd8"
+  },
+  "quote_ticker.parquet": {
+   "bytes": 2213,
+   "sha256": "dc15828c569e9a88da086b7c97e9aba48aafee0ed0c4f336c33ffefcfb50b4c1"
+  },
+  "quote_vn30.parquet": {
+   "bytes": 744,
+   "sha256": "377cc47f637082c37db0e56bd114241d4fd140510dc6a5c91e28f86350c44428"
+  }
+ }
+}

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+repo:
+  name: ProtoPair
+  primary_language: python
+
+env:
+  base: python
+  python_version: '3.12'
+  manager: pip
+  install_project: true
+  os_packages: []
+
+secrets: []
+
+data_sources:
+  processed:
+    - kind: in_repo
+      expected_layout:
+        - data/market/w1/quote_close.parquet
+        - data/market/w2/quote_close.parquet
+      satisfies: [data_preparation]
+  raw: []
+
+steps:
+  - id: data_preparation
+    nine_step: step_2_data_preparation
+    required: true
+    network: none
+    timeout_seconds: 600
+    command: "pp-credibility"
+    inputs: []
+    outputs:
+      - result/credibility/w1.json
+      - result/credibility/w2.json
+
+  - id: in_sample_backtest
+    nine_step: step_4_in_sample
+    required: true
+    network: none
+    timeout_seconds: 600
+    command: "pp-backtest --window w1"
+    inputs: []
+    outputs: []
+    depends_on: [data_preparation]
+
+expected:
+  - step_id: in_sample_backtest
+    metrics:
+      - name: fills
+        display_name: Naive fills (w1)
+        value: 1209
+        tolerance: {kind: absolute, value: 0}
+      - name: hpr_pct
+        display_name: Naive HPR % (w1, Tier-2, not a gate)
+        value: 1.0278
+        tolerance: {kind: absolute, value: 0.0001}
+
+nine_step_coverage:
+  step_1_hypothesis: {present: true, section: "docs/hypothesis.md"}
+  step_2_data_preparation: {present: true, section: "README: Windows; data/market/*/DATA-MANIFEST.md"}
+  step_3_forming_set_of_rules: {present: true, section: "src/proto_pair/strategy.py"}
+  step_4_in_sample: {present: true, section: "README: Results"}
+  step_5_optimization: {present: false, section: null}
+  step_6_out_of_sample: {present: false, section: null}
+  step_7_paper_trading: {present: false, section: null}
