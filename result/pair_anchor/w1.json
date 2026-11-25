@@ -3,7 +3,7 @@
  "start": "2022-08-01",
  "end": "2023-08-04",
  "sessions": 254,
- "plutus_simulator_commit": "b62e16331e73344de1cfab9734c30cb24f2fdf58",
+ "plutus_simulator_commit": "566fda4bf27745541cb6bfa077023a60947739d8",
  "plutus_simulator_dirty": false,
  "proto_pair_commit": "0c8b77b38933f733d660b33d353a25cbf11df291",
  "parameters": {

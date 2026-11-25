@@ -81,7 +81,7 @@ Each slice also carries the close-only signal warm-up (59 sessions of `VN30` and
 window). The old window was 2022-01-01 → 2023-12-31. These two windows together are shorter, and each stands
 alone. Per-file detail is in `data/market/<window>/DATA-MANIFEST.md`.
 
-## Results (plutus-simulator `b62e163`, as recorded in `result/pair_anchor/<window>.json`)
+## Results (plutus-simulator `566fda4`, as recorded in `result/pair_anchor/<window>.json`)
 
 | Window | fills n → f (f/n) | HPR n → f | exits blocked by T+2 | name-days held open | opposite-side trades forgone |
 |---|---|---|---|---|---|
